@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/SiteIcon.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/SiteIcon.png?v=7.3.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.3.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.3.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="下载Unity 2019.2正式版：https://unity.cn/releases 新功能发布说明Unity 2019.2的新功能及重要改进内容分为四大类别：艺术家及设计师工具、开发者工具、图形、支持平台。 本文将介绍Unity 2019.2的重要功能，更具体的详细功能介绍请访问Unity官方网站：https://unity.com/releases/2019-2  重点功能和改进概要ProB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="unity2019.2正式发布">
+<meta property="og:url" content="http://shuaiqzh.com/unity2019-2正式发布/index.html">
+<meta property="og:site_name" content="qzh blog">
+<meta property="og:description" content="下载Unity 2019.2正式版：https://unity.cn/releases 新功能发布说明Unity 2019.2的新功能及重要改进内容分为四大类别：艺术家及设计师工具、开发者工具、图形、支持平台。 本文将介绍Unity 2019.2的重要功能，更具体的详细功能介绍请访问Unity官方网站：https://unity.com/releases/2019-2  重点功能和改进概要ProB">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://img.manew.com/data/attachment/forum/201908/01/133630cfvm7u9vdqc8qmm5.png.thumb.jpg">
+<meta property="og:updated_time" content="2019-08-02T05:26:32.969Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="unity2019.2正式发布">
+<meta name="twitter:description" content="下载Unity 2019.2正式版：https://unity.cn/releases 新功能发布说明Unity 2019.2的新功能及重要改进内容分为四大类别：艺术家及设计师工具、开发者工具、图形、支持平台。 本文将介绍Unity 2019.2的重要功能，更具体的详细功能介绍请访问Unity官方网站：https://unity.com/releases/2019-2  重点功能和改进概要ProB">
+<meta name="twitter:image" content="http://img.manew.com/data/attachment/forum/201908/01/133630cfvm7u9vdqc8qmm5.png.thumb.jpg">
+  <link rel="canonical" href="http://shuaiqzh.com/unity2019-2正式发布/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>unity2019.2正式发布 | qzh blog</title>
+  <meta name="generator" content="Hexo 3.9.0">
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">qzh blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Play with something fun</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/unity2019-2正式发布/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zh.qiao">
+      <meta itemprop="description" content="Write technical articles and share something interesting">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">unity2019.2正式发布
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-02 12:57:31 / 修改时间：13:26:32" itemprop="dateCreated datePublished" datetime="2019-08-02T12:57:31+08:00">2019-08-02</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>4.4k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>4 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>下载Unity 2019.2正式版：<br><a href="https://unity.cn/releases" target="_blank" rel="noopener">https://unity.cn/releases</a></p>
+<h2 id="新功能发布说明"><a href="#新功能发布说明" class="headerlink" title="新功能发布说明"></a>新功能发布说明</h2><p>Unity 2019.2的新功能及重要改进内容分为四大类别：艺术家及设计师工具、开发者工具、图形、支持平台。</p>
+<p>本文将介绍Unity 2019.2的重要功能，更具体的详细功能介绍请访问Unity官方网站：<br><a href="https://unity.com/releases/2019-2" target="_blank" rel="noopener">https://unity.com/releases/2019-2</a></p>
+<p><img src="http://img.manew.com/data/attachment/forum/201908/01/133630cfvm7u9vdqc8qmm5.png.thumb.jpg" alt="unity2019"></p>
+<h2 id="重点功能和改进概要"><a href="#重点功能和改进概要" class="headerlink" title="重点功能和改进概要"></a>重点功能和改进概要</h2><p><a href="https://mp.weixin.qq.com/s?__biz=MzU5MjQ1NTEwOA==&mid=2247493165&idx=1&sn=8b2be56909449c787ef335feecd0d0be&chksm=fe1dd286c96a5b907971e59d57181d4ea7c354f1d741172d196633eb497527b70cf0429efdf8&scene=21#wechat_redirect" target="_blank" rel="noopener">ProBuilder</a> 4.0在Unity 2019.2中作为已验证的资源包发布，它是结合3D建模和关卡设计的独特工具。ProBuilder优化了构建简单几何体的功能，可以根据需要进行细节编辑和UV展开。</p>
+<p>Polybrush作为预览版资源包，可通过资源包管理器Package Manager进行获取。它可以直接在编辑器中，使用任意3D模型雕刻复杂的形状、摆放细节模型网格、绘制自定义光照或着色，以及混合网格间的纹理。</p>
+<p>DSPGraph是基于Unity的C# Job System构建全新的音频渲染及混音系统，DSPGraph现作为预览版资源包推出。</p>
+<p>我们改进了Unity全新的UI框架UI Elements，为Shader Graph着色器视图，Visual Effect Graph和Visual Scripting这类可视化编程基于节点的工具渲染其UI的方式。当开发和在编辑器中制作复杂的视图时，将提供更流畅和反馈更好的UI体验。</p>
+<p>为了帮助用户更好地组织复杂的视图，我们给Visual Effect Graph添加了子视图功能。用户可以分享子视图，为Block属性模块和Operator运算符组合和重用子视图，并在视觉效果中进行嵌套。</p>
+<p>我们也改进了Visual Effect Graph和高清晰渲染管线HDRP的集成，HDRP会默认使用Visual Effect Graph，为你提供额外的渲染功能。</p>
+<p>现在使用Shader Graph着色器视图时，用户可以通过Color Modes颜色模式，根据不同功能使用各种颜色来突出显示视图中的节点，或选取自己想要的颜色来提高可读性。该功能在大型视图中特别实用。</p>
+<p>我们为2D Animation资源包工具增加了替换精灵Sprite的功能。通过这项新功能，我们可以改变游戏对象的渲染精灵Sprite，并重复利用相同的骨骼绑定和动画剪辑。</p>
+<p>该功能允许用户使用不同精灵库快速创建多个角色，或使用Sprite Resolvers精灵解析器自定义角色的组成部分。现在我们可以通过替换精灵，创建外形完全不同，却有相同动画绑定的角色。</p>
+<h2 id="面向开发者的工具"><a href="#面向开发者的工具" class="headerlink" title="面向开发者的工具"></a>面向开发者的工具</h2><p>Burst Compiler在Unity 2019.1脱离预览阶段。在此次更新中，Burst Compiler 1.1包含对JIT即时编译阶段的多项改进，以及对C#的改进。</p>
+<p>TypeCache提供了一种快捷方法访问特定属性标记的类型或方法，以及从特定类或接口派生的类型。它使用了为编辑器加载的所有程序集而构建的内部本地缓存 。</p>
+<p>对于移动应用开发者，我们通过新的Screen.brightness属性加入了屏幕亮度的控制功能，它适用于iOS系统和系统。我们改进了iOS系统的ReplayKit API以及检测屏幕刘海周围边框的支持，使开发者可以轻松调整UI。</p>
+<p>我们将PhysX Cloth Library从之前的PxCloth改为NvCloth，这是从PhysX 3.4到PhysX 4.x升级过程的一部分。</p>
+<p>我们已经开始把代码编辑器集成和IDE集成从核心组件转变为资源包，并公开C# API。在此次更新中，Visual Studio Code和JetBrains Rider集成会作为资源包提供，Visual Studio将在未来版本中作为资源包提供。</p>
+<p>我们移除了旧.NET 3.5 Equivalent脚本运行时。任何使用.NET 3.5 Equivalent脚本运行时的项目会自动更新为使用.NET 4.x Equivalent脚本运行时。</p>
+<p>Incremental Garbage Collection增量式垃圾回收功能在Unity 2019.1作为实验性功能在部分平台上推出，现在该功能支持除WebGL以外的所有平台。</p>
+<p>Unity 2019.2也提供对Intel® VTune™ Amplifier的支持，适用于Windows Standalone平台（支持x86架构，64位系统）和Windows版编辑器，包含C#代码的采样分析功能。</p>
+<h2 id="图形"><a href="#图形" class="headerlink" title="图形"></a>图形</h2><p>在Unity 2019.2中，高清晰渲染管线HDRP包含一个Arbitrary Output Variables任意输出变量的API，允许用户从场景中输出材质属性，光照，深度缓冲区和其它通道。此外，该API已经在Unity Recorder中使用，可以轻松导出特定输出内容，从而使用HDRP进行渲染。</p>
+<p>我们还添加了Dynamic Resolution动态分辨率功能，允许用户调整渲染世界的分辨率，并提供硬件动态分辨率支持。相较于软件动态分辨率，将会提供更好的性能。</p>
+<p>MatCap调试视图模式会将对象的材质和光照替换为简单的环境纹理。该模式非常适用于定位和获取场景，而无需设置场景照明。例如：如果你正在编辑洞穴内部这般较暗的场景区域，该模式可以在低光照的情况下让你更轻松的观察场景。</p>
+<p>新的Ambient Occlusion环境遮蔽效果是屏幕空间着色和渲染算法的结合，它可以提高场景中环境光照模拟的质量，特别是较小细节的质量，并且提供良好的性能。用户可以从多个选项中进行选择，从而优化性能和质量。</p>
+<p>轻量级渲染管线LWRP加入了新的2D功能，例如：实验性2D Renderer渲染器包含2D Pixel Perfect和2D Lights。新的2D Lights可以轻松提高2D项目的视觉效果，不必使用3D光线或自定义着色器。</p>
+<p>Shader Graph着色器视图现在拥有2D Master节点，可创建2D Unlit着色器和Lit Sprite着色器。此外，精准模式允许用户通过设置节点，使用较少GPU内存，这有助于提高包括移动设备在内的各种平台的性能。</p>
+<p>光照贴图降噪功能现在适用于所有编辑器平台，以及各种不同厂商的GPU。我们对配置烘焙过程的方法做了根本性的改动，这为提高光照贴图烘焙速度开启了新的可能性。同时，我们也加入了新的探针工作流程。</p>
+<p>通过使用Probe-Lit GI Contributors，开发者可以选择影响全局光照的对象是否从光照探针或光照贴图接收全局光照。这将允许网格渲染器影响反弹光照计算过程，不占用光照贴图的体素，从而大幅改进烘焙时间，减少内存使用量。</p>
+<p>Unity 2019.2也大幅加快了GPU Progressive Lightmapper的烘焙速度，特别是在光照迭代阶段。新功能包括对环境光照的多重重要性采样支持，在使用视图优先级或中低占用光照贴图时，提高采样过程的性能。</p>
+<p>通过对NVIDIA OptiX AI Denoiser的升级，我们得到更好的性能和使用量更低的内存，并添加了NVIDIA图灵架构GPU的支持。GPU Progressive Lightmapper加入该功能的支持。</p>
+<p>光照贴图现在支持Intel Open Image Denoise图像降噪库，该降噪库基于机器学习技术，它通过对光照贴图进行后期处理来改进光照贴图工作流程和质量。它会去除噪声和瑕疵，从而得到使用更少采样的平滑无噪声光照贴图。</p>
+<h2 id="平台和编辑器工作流程"><a href="#平台和编辑器工作流程" class="headerlink" title="平台和编辑器工作流程"></a>平台和编辑器工作流程</h2><p>适用于Android系统的Optimized Frame Pacing优化帧数调步选项是Unity和Google的Android Gaming团队及Graphics团队合作开发的功能，该选项通过使帧数以较少变化进行分配，提供稳定的帧率，从而实现更流畅的游戏体验。</p>
+<p>移动开发者将受益于改进的OpenGL支持，我们增加了适用于iOS系统的OpenGL多线程支持，在不支持Metal技术的低端iOS设备上，可以提高项目的性能。</p>
+<p>针对iOS系统和Android系统，我们为SRP Batcher添加了OpenGL支持，从而提升轻量级渲染管线LWRP项目的CPU性能。</p>
+<p>我们添加了使用Android App Bundle的APK文件大小检查功能，以便了解不同构建目标的最终应用大小。</p>
+<p>如果你正在开发VR项目，请尝试现已支持VR功能的HDRP。</p>
+<p>我们为开发者的目标平台加入重新设计的SDK加载和管理系统，从而帮助简化开发工作流程。该系统目前处于预览阶段，我们希望开发者可以尝试新工作流程，并提供反馈。</p>
+<p>AR Foundation 2.2已经更新，新版本支持：面部追踪、2D图像追踪、3D对象追踪和环境探针。了解AR Foundation对ARKit 3功能的支持，请阅读：AR Foundation现已支持ARKit 3。</p>
+<p>Vuforia支持已经从Player Settings迁移至资源包管理器，并且为开发者提供了最新版本的Vuforia Engine 8.3。</p>
+<h2 id="更多改进"><a href="#更多改进" class="headerlink" title="更多改进"></a>更多改进</h2><p>我们将继续让Unity编辑器变得更加简洁和模块化，把多项已有功能转化为资源包，包括：Unity UI，2D Sprite Editor精灵编辑器和2D Tilemap Editor编辑器。这些功能现在可以通过资源包管理器轻松地集成，升级和移除。</p>
+<p>和此前版本一样，Unity 2019.2包含大量改进和错误修复。我们非常感谢做Alpha测试和Beta测试的Unity社区，帮助我们使用和测试了所有新工具和功能，并提供适当且及时的反馈，帮助我们修复大量问题，进而完善新版本。</p>
+<p>请访问Unity 2019.2发布日志，了解该版本完整的功能，改进和错误修复内容：<br><a href="https://unity.cn/releases/full/2019/2019.2.0" target="_blank" rel="noopener">https://unity.cn/releases/full/2019/2019.2.0</a></p>
+<p>你也可以使用Issue Tracker找到特定标签的信息：<br><a href="https://issuetracker.unity3d.com/" target="_blank" rel="noopener">https://issuetracker.unity3d.com/</a></p>
+<h2 id="未来展望"><a href="#未来展望" class="headerlink" title="未来展望"></a>未来展望</h2><p>你是否感兴趣Unity 2019.3会有什么新内容？</p>
+<p>现在你可以直接获取Unity 2019.3 Alpha版本：</p>
+<p>Windows版:<br><a href="https://public-cdn.cloud.unitychina.cn/hub/prod/UnityHubSetup.exe" target="_blank" rel="noopener">https://public-cdn.cloud.unitychina.cn/hub/prod/UnityHubSetup.exe</a></p>
+<p>你也可以等待在夏季稍晚时候发布的Unity 2019.3Beta版本。Unity 2019.3正式版预计在2019年秋季发布。</p>
+<p>如果你参与Unity Beta Program计划，你不仅会访问和了解最新功能，而且还可以确保你的项目兼容最新版本。同时你还可以和Unity研发团队分享反馈，从而影响Unity的未来。</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/如何建一个能被浏览器访问到的网站/" rel="prev" title="如何建一个能被浏览器访问到的网站">
+                  如何建一个能被浏览器访问到的网站 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#新功能发布说明"><span class="nav-number">1.</span> <span class="nav-text">新功能发布说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重点功能和改进概要"><span class="nav-number">2.</span> <span class="nav-text">重点功能和改进概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面向开发者的工具"><span class="nav-number">3.</span> <span class="nav-text">面向开发者的工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图形"><span class="nav-number">4.</span> <span class="nav-text">图形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#平台和编辑器工作流程"><span class="nav-number">5.</span> <span class="nav-text">平台和编辑器工作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更多改进"><span class="nav-number">6.</span> <span class="nav-text">更多改进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未来展望"><span class="nav-number">7.</span> <span class="nav-text">未来展望</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/user.png"
+      alt="zh.qiao">
+  <p class="site-author-name" itemprop="name">zh.qiao</p>
+  <div class="site-description" itemprop="description">Write technical articles and share something interesting</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/qzhuser" title="GitHub &rarr; https://github.com/qzhuser" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zh.qiao</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">9k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">8 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.3.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.3.0"></script><script src="/js/motion.js?v=7.3.0"></script>
+<script src="/js/schemes/muse.js?v=7.3.0"></script>
+<script src="/js/next-boot.js?v=7.3.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
