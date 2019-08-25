@@ -247,11 +247,19 @@
                 
               
 
-              <time title="创建时间：2019-08-21 20:07:37 / 修改时间：20:08:24" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:37+08:00">2019-08-21</time>
+              <time title="创建时间：2019-08-21 20:07:37" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:37+08:00">2019-08-21</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:24:42" itemprop="dateModified" datetime="2019-08-25T17:24:42+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -287,16 +295,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="Webgl遇到的两个大坑"><a href="#Webgl遇到的两个大坑" class="headerlink" title="Webgl遇到的两个大坑"></a>Webgl遇到的两个大坑</h3><h2 id="XML文件远程读取"><a href="#XML文件远程读取" class="headerlink" title="XML文件远程读取"></a>XML文件远程读取</h2><p>我的xml文件存放在远程服务器端，我想直接远程下载访问，但这遇到了问题<br>首先，xml读取有两种方法</p>
+          <h2 id="XML文件远程读取"><a href="#XML文件远程读取" class="headerlink" title="XML文件远程读取"></a>XML文件远程读取</h2><p>我的xml文件存放在远程服务器端，我想直接远程下载访问，但这遇到了问题<br>首先，xml读取有两种方法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">XmlDocument xml = new XmlDocument();</span><br><span class="line">xml.LoadXml(string);</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">XmlDocument xml = new XmlDocument();</span><br><span class="line">xml.Load(path);</span><br></pre></td></tr></table></figure>
 
 <p>loadxml是读取一个string字符串，从而写到xmldocument里，而load则是一个文件路径，要有后缀名<br>刚开始我是用load（远程链接）发现获取不到<br>然后我先用www下载，用<a href="http://www.text转成string字符传，接着用LoadXml读取" target="_blank" rel="noopener">www.text转成string字符传，接着用LoadXml读取</a><br>发现还是读取不到，再网上搜了半天，发现这个类StringReader，它把www读取的文本转化为另一种string字符串<br>虽然我debug出来两种字符串都一样，但是这个偏偏就能用，也希望有大佬给我解释一下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">IEnumerator DownXml()</span><br><span class="line">    &#123;</span><br><span class="line">        WWW xmlwww = new WWW(&quot;http://data.shuaiqzh.com/DancerMan.xml&quot;);</span><br><span class="line">        yield return xmlwww;</span><br><span class="line">        if (xmlwww.isDone)</span><br><span class="line">        &#123;</span><br><span class="line">            System.IO.StringReader stringReader = new System.IO.StringReader(xmlwww.text);</span><br><span class="line">            stringReader.Read();</span><br><span class="line">            string result = stringReader.ReadToEnd();</span><br><span class="line">            stringReader.Close();</span><br><span class="line">            //print(xmlwww.text);</span><br><span class="line">            ReadXml(result);</span><br><span class="line">        &#125;</span><br><span class="line">        xmlwww.Dispose();</span><br><span class="line">    &#125;</span><br><span class="line">    void ReadXml(string path)</span><br><span class="line">    &#123;</span><br><span class="line">        XmlDocument xml = new XmlDocument();</span><br><span class="line">        xml.LoadXml(path);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">IEnumerator DownXml()</span><br><span class="line">    &#123;</span><br><span class="line">        WWW xmlwww = new WWW(&quot;url&quot;);</span><br><span class="line">        yield return xmlwww;</span><br><span class="line">        if (xmlwww.isDone)</span><br><span class="line">        &#123;</span><br><span class="line">            System.IO.StringReader stringReader = new System.IO.StringReader(xmlwww.text);</span><br><span class="line">            stringReader.Read();</span><br><span class="line">            string result = stringReader.ReadToEnd();</span><br><span class="line">            stringReader.Close();</span><br><span class="line">            //print(xmlwww.text);</span><br><span class="line">            ReadXml(result);</span><br><span class="line">        &#125;</span><br><span class="line">        xmlwww.Dispose();</span><br><span class="line">    &#125;</span><br><span class="line">    void ReadXml(string path)</span><br><span class="line">    &#123;</span><br><span class="line">        XmlDocument xml = new XmlDocument();</span><br><span class="line">        xml.LoadXml(path);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="webgl远程加载ab包"><a href="#webgl远程加载ab包" class="headerlink" title="webgl远程加载ab包"></a>webgl远程加载ab包</h2><p>这个问题是我把ab包放在服务器上 编辑器上正常下载和解压 但是到了浏览器上到解压的步骤时会报一条错误</p>
-<h1 id="Decompressing-this-format-1-is-not-supported-on-this-platform"><a href="#Decompressing-this-format-1-is-not-supported-on-this-platform" class="headerlink" title="Decompressing this format (1) is not supported on this platform"></a>Decompressing this format (1) is not supported on this platform</h1><p>错误的大概意思就是平台不支持该格式解压<br>我到unity官方文档上查了一下 <a href="https://docs.unity3d.com/2017.4/Documentation/Manual/webgl-debugging.html" target="_blank" rel="noopener">u3d文档</a><br>原来我使用的是默认的压缩格式LZMA  而webgl应该用LZ4的压缩格式。。。。所以你只要在打包的代码中这样写就可以了，还有就是目标平台也要写成WebGL</p>
+<h2 id="Decompressing-this-format-1-is-not-supported-on-this-platform"><a href="#Decompressing-this-format-1-is-not-supported-on-this-platform" class="headerlink" title="Decompressing this format (1) is not supported on this platform"></a>Decompressing this format (1) is not supported on this platform</h2><p>错误的大概意思就是平台不支持该格式解压<br>我到unity官方文档上查了一下 <a href="https://docs.unity3d.com/2017.4/Documentation/Manual/webgl-debugging.html" target="_blank" rel="noopener">u3d文档</a><br>原来我使用的是默认的压缩格式LZMA  而webgl应该用LZ4的压缩格式。。。。所以你只要在打包的代码中这样写就可以了，还有就是目标平台也要写成WebGL</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.WebGL);</span><br></pre></td></tr></table></figure>
 
 
@@ -352,11 +360,19 @@
                 
               
 
-              <time title="创建时间：2019-08-21 20:07:10 / 修改时间：20:08:40" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:10+08:00">2019-08-21</time>
+              <time title="创建时间：2019-08-21 20:07:10" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:10+08:00">2019-08-21</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:24:32" itemprop="dateModified" datetime="2019-08-25T17:24:32+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -452,11 +468,19 @@
                 
               
 
-              <time title="创建时间：2019-08-10 12:14:44 / 修改时间：12:17:07" itemprop="dateCreated datePublished" datetime="2019-08-10T12:14:44+08:00">2019-08-10</time>
+              <time title="创建时间：2019-08-10 12:14:44" itemprop="dateCreated datePublished" datetime="2019-08-10T12:14:44+08:00">2019-08-10</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:25:42" itemprop="dateModified" datetime="2019-08-25T17:25:42+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -551,11 +575,19 @@
                 
               
 
-              <time title="创建时间：2019-08-10 12:12:05 / 修改时间：12:13:36" itemprop="dateCreated datePublished" datetime="2019-08-10T12:12:05+08:00">2019-08-10</time>
+              <time title="创建时间：2019-08-10 12:12:05" itemprop="dateCreated datePublished" datetime="2019-08-10T12:12:05+08:00">2019-08-10</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:26:46" itemprop="dateModified" datetime="2019-08-25T17:26:46+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -653,11 +685,19 @@
                 
               
 
-              <time title="创建时间：2019-08-02 14:00:33 / 修改时间：14:29:29" itemprop="dateCreated datePublished" datetime="2019-08-02T14:00:33+08:00">2019-08-02</time>
+              <time title="创建时间：2019-08-02 14:00:33" itemprop="dateCreated datePublished" datetime="2019-08-02T14:00:33+08:00">2019-08-02</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:23:31" itemprop="dateModified" datetime="2019-08-25T17:23:31+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -749,11 +789,19 @@
                 
               
 
-              <time title="创建时间：2019-08-02 12:57:31 / 修改时间：13:26:32" itemprop="dateCreated datePublished" datetime="2019-08-02T12:57:31+08:00">2019-08-02</time>
+              <time title="创建时间：2019-08-02 12:57:31" itemprop="dateCreated datePublished" datetime="2019-08-02T12:57:31+08:00">2019-08-02</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:26:46" itemprop="dateModified" datetime="2019-08-25T17:26:46+08:00">2019-08-25</time>
+              </span>
             
           
 
@@ -1013,6 +1061,47 @@
         </a>
       </div>
     
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
   </nav>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
@@ -1024,6 +1113,17 @@
         
       
         <a href="https://github.com/qzhuser" title="GitHub &rarr; https://github.com/qzhuser" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_37190129" title="CSDN &rarr; https://blog.csdn.net/qq_37190129" rel="noopener" target="_blank"><i class="fa fa-fw fa-fa-cuttlefish"></i>CSDN</a>
       </span>
     
   </div>
@@ -1058,9 +1158,6 @@
     </span>
     <span title="站点阅读时长">8 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.3.0</div>
 
         
 
