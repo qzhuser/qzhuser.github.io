@@ -54,18 +54,19 @@
   };
 </script>
 
-  <meta name="description" content="Write technical articles and share something interesting">
-<meta property="og:type" content="website">
-<meta property="og:title" content="qzh blog">
-<meta property="og:url" content="http://shuaiqzh.com/tags/index.html">
+  <meta name="description" content="目录介绍/bin/存放系统命令的目录（普通账号和管理员都可以访问） /boot/系统启动目录 /dev/设备文件保存位置 /etc/配置文件（强烈建议备份） /home/普通用户，默认登陆位置，比如一个普通账号为abc，那他的起始位置就是/home/qzh/而管理员的起始位置为/root/ /lost+found/每个分区目录中都会出现（用来备份和恢复目录） /usr/系统的软件资源目录，类似与w">
+<meta name="keywords" content="Linux,Linux目录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初学Linux心得（二）">
+<meta property="og:url" content="http://shuaiqzh.com/初学Linux心得（二）/index.html">
 <meta property="og:site_name" content="qzh blog">
-<meta property="og:description" content="Write technical articles and share something interesting">
+<meta property="og:description" content="目录介绍/bin/存放系统命令的目录（普通账号和管理员都可以访问） /boot/系统启动目录 /dev/设备文件保存位置 /etc/配置文件（强烈建议备份） /home/普通用户，默认登陆位置，比如一个普通账号为abc，那他的起始位置就是/home/qzh/而管理员的起始位置为/root/ /lost+found/每个分区目录中都会出现（用来备份和恢复目录） /usr/系统的软件资源目录，类似与w">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-07T09:06:25.226Z">
+<meta property="og:updated_time" content="2019-09-07T08:18:20.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="qzh blog">
-<meta name="twitter:description" content="Write technical articles and share something interesting">
-  <link rel="canonical" href="http://shuaiqzh.com/tags/">
+<meta name="twitter:title" content="初学Linux心得（二）">
+<meta name="twitter:description" content="目录介绍/bin/存放系统命令的目录（普通账号和管理员都可以访问） /boot/系统启动目录 /dev/设备文件保存位置 /etc/配置文件（强烈建议备份） /home/普通用户，默认登陆位置，比如一个普通账号为abc，那他的起始位置就是/home/qzh/而管理员的起始位置为/root/ /lost+found/每个分区目录中都会出现（用来备份和恢复目录） /usr/系统的软件资源目录，类似与w">
+  <link rel="canonical" href="http://shuaiqzh.com/初学Linux心得（二）/">
 
 
 <script id="page-configurations">
@@ -73,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
-    isPage: true,
+    isPost: true,
+    isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签 | qzh blog</title>
+  <title>初学Linux心得（二） | qzh blog</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -197,24 +198,6 @@
 
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 </nav>
 </div>
     </header>
@@ -233,123 +216,157 @@
             
 
   <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">
-
-</h1>
-
-<div class="post-meta">
+      <article itemscope itemtype="http://schema.org/Article">
   
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/初学Linux心得（二）/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zh.qiao">
+      <meta itemprop="description" content="Write technical articles and share something interesting">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">初学Linux心得（二）
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 16:14:18 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2019-09-07T16:14:18+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>212</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="目录介绍"><a href="#目录介绍" class="headerlink" title="目录介绍"></a>目录介绍</h3><h1 id="bin"><a href="#bin" class="headerlink" title="/bin/"></a>/bin/</h1><p>存放系统命令的目录（普通账号和管理员都可以访问）</p>
+<h1 id="boot"><a href="#boot" class="headerlink" title="/boot/"></a>/boot/</h1><p>系统启动目录</p>
+<h1 id="dev"><a href="#dev" class="headerlink" title="/dev/"></a>/dev/</h1><p>设备文件保存位置</p>
+<h1 id="etc"><a href="#etc" class="headerlink" title="/etc/"></a>/etc/</h1><p>配置文件（强烈建议备份）</p>
+<h1 id="home"><a href="#home" class="headerlink" title="/home/"></a>/home/</h1><p>普通用户，默认登陆位置，比如一个普通账号为abc，那他的起始位置就是/home/qzh/<br>而管理员的起始位置为/root/</p>
+<h1 id="lost-found"><a href="#lost-found" class="headerlink" title="/lost+found/"></a>/lost+found/</h1><p>每个分区目录中都会出现（用来备份和恢复目录）</p>
+<h1 id="usr"><a href="#usr" class="headerlink" title="/usr/"></a>/usr/</h1><p>系统的软件资源目录，类似与windows系统的windows目录</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="zh.qiao 微信支付">
+        <p>微信支付</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="zh.qiao 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
 </div>
 
-</header>
+      
 
-      
-      
-      
-      <div class="post-body">
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+            
+              <a href="/tags/Linux目录/" rel="tag"># Linux目录</a>
+            
+          </div>
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
               
+                <a href="/初学Linux心得（一）/" rel="next" title="初学Linux心得（一）">
+                  <i class="fa fa-chevron-left"></i> 初学Linux心得（一）
+                </a>
               
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 18 个标签
             </div>
-            <div class="tag-cloud-tags">
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
               
-                <a href="/tags/AssetBundle/" style="font-size: 16.5px; color: #9d9d9d">AssetBundle</a> <a href="/tags/IP/" style="font-size: 12px; color: #ccc">IP</a> <a href="/tags/Linux/" style="font-size: 21px; color: #6f6f6f">Linux</a> <a href="/tags/Linux命令/" style="font-size: 12px; color: #ccc">Linux命令</a> <a href="/tags/Linux目录/" style="font-size: 12px; color: #ccc">Linux目录</a> <a href="/tags/Toggle监听/" style="font-size: 12px; color: #ccc">Toggle监听</a> <a href="/tags/UGUI/" style="font-size: 12px; color: #ccc">UGUI</a> <a href="/tags/WWW下载/" style="font-size: 12px; color: #ccc">WWW下载</a> <a href="/tags/Xml/" style="font-size: 12px; color: #ccc">Xml</a> <a href="/tags/github/" style="font-size: 12px; color: #ccc">github</a> <a href="/tags/githubPages/" style="font-size: 12px; color: #ccc">githubPages</a> <a href="/tags/unity/" style="font-size: 30px; color: #111">unity</a> <a href="/tags/webgl/" style="font-size: 25.5px; color: #404040">webgl</a> <a href="/tags/域名/" style="font-size: 12px; color: #ccc">域名</a> <a href="/tags/新闻/" style="font-size: 12px; color: #ccc">新闻</a> <a href="/tags/服务器/" style="font-size: 21px; color: #6f6f6f">服务器</a> <a href="/tags/网站/" style="font-size: 12px; color: #ccc">网站</a> <a href="/tags/腾讯云/" style="font-size: 12px; color: #ccc">腾讯云</a>
+                <a href="/初学Linux心得（三）/" rel="prev" title="初学Linux心得（三）">
+                  初学Linux心得（三） <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
         
-      </div>
-      
-      
-      
-    </div>
+      </footer>
     
+  </div>
+  
+  
+  
+  </article>
 
-    
-    
-    
   </div>
 
 
@@ -386,6 +403,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录介绍"><span class="nav-number">1.</span> <span class="nav-text">目录介绍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#bin"><span class="nav-number"></span> <span class="nav-text">/bin/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#boot"><span class="nav-number"></span> <span class="nav-text">/boot/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#dev"><span class="nav-number"></span> <span class="nav-text">/dev/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#etc"><span class="nav-number"></span> <span class="nav-text">/etc/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#home"><span class="nav-number"></span> <span class="nav-text">/home/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lost-found"><span class="nav-number"></span> <span class="nav-text">/lost+found/</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#usr"><span class="nav-number"></span> <span class="nav-text">/usr/</span></a></div>
+        
       </div>
       <!--/noindex-->
 

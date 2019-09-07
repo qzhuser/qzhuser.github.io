@@ -25,10 +25,10 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '7.3.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -55,7 +55,7 @@
 </script>
 
   <meta name="description" content="首先就是要有webgl支持 才能switch（unity里直接可以下） 一些主要的注意事项，这个博主都有写 https://blog.csdn.net/k20132014/article/details/78448142 其实很多默认就好 唯一遇到的坑就是 那个 strip Engine Code 如果勾选了一些功能就没有了 比如音频组件 就没作用了 还有就是build之后 直接打开index.h">
-<meta name="keywords" content="webgl,unity">
+<meta name="keywords" content="unity,webgl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webgl测试（unity2018.1.9f）">
 <meta property="og:url" content="http://shuaiqzh.com/2018-1-9f）/index.html">
@@ -310,6 +310,29 @@
     
         
       
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="zh.qiao 微信支付">
+        <p>微信支付</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="zh.qiao 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+      
 
       <footer class="post-footer">
           
@@ -317,9 +340,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/webgl/" rel="tag"># webgl</a>
-            
               <a href="/tags/unity/" rel="tag"># unity</a>
+            
+              <a href="/tags/webgl/" rel="tag"># webgl</a>
             
           </div>
         
@@ -406,7 +429,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -447,7 +470,17 @@
         
           
         
-        <span class="site-state-item-count">13</span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -501,12 +534,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">9 分钟</span>
 </div>
 
         
@@ -536,6 +569,7 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="/js/utils.js?v=7.3.0"></script><script src="/js/motion.js?v=7.3.0"></script>
 <script src="/js/schemes/muse.js?v=7.3.0"></script>
+
 <script src="/js/next-boot.js?v=7.3.0"></script>
 
 
