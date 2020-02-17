@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/SiteIcon.ico?v=7.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/SiteIcon.ico?v=7.3.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.3.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.3.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="写点文章，分享点趣事">
+<meta property="og:type" content="website">
+<meta property="og:title" content="qzh blog">
+<meta property="og:url" content="http://shuaiqzh.com/page/2/index.html">
+<meta property="og:site_name" content="qzh blog">
+<meta property="og:description" content="写点文章，分享点趣事">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="qzh blog">
+<meta name="twitter:description" content="写点文章，分享点趣事">
+  <link rel="alternate" href="/atom.xml" title="qzh blog" type="application/atom+xml">
+  <link rel="canonical" href="http://shuaiqzh.com/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>qzh blog</title>
+  <meta name="generator" content="Hexo 3.9.0">
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">qzh blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">做一些有趣的事</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <div id="posts" class="posts-expand">
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/unity中的Destroy和DestroyImmediate/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/unity中的Destroy和DestroyImmediate/" class="post-title-link" itemprop="url">unity中的Destroy和DestroyImmediate</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-16 18:26:23 / 修改时间：18:35:33" itemprop="dateCreated datePublished" datetime="2020-01-16T18:26:23+08:00">2020-01-16</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>501</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>   今天要写一个问题考核的小东西，本来很快就写完了，但是有一点卡壳了，在刷新答案的时候要把当前答案框里的答案全部销毁，然后创建新的答案（答案都是按钮，且数量不定），我通过debug发现每次销毁后，框内虽然没有上道题的答案了，但是输出答案的父节点的childcount都显示大于0，后来查阅了资料才发现，Destroy这个方法，不会立即删除对象，而是会在下一帧才上销毁，在同一帧的时候他会先把对象存储在内存中，防止如果在同一帧在destroy后还调用了要销毁的对象，而DestroyImmediate会在同一帧立即删除当前对象</p>
+<p> 但是还有一个问题，如果用<strong>DestroyImmediate</strong>，那此对象在父节点中会立即删除，那么在其后的对象的下标都会向前移一位，所以如果这个方法遍历删除某一对象下的子节点时就要用下面的这个方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int num = resultP.childCount;</span><br><span class="line">        for (int i = 0; i &lt; num; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            DestroyImmediate(resultP.GetChild(0).gameObject,true);//在当前帧立即销毁该资源</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>参考链接：<a href="http://www.manew.com/youxizz/2062.html" target="_blank" rel="noopener">蛮牛u3d手册</a></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/初学Linux心得（四）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/初学Linux心得（四）/" class="post-title-link" itemprop="url">初学Linux心得（四）</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-16 18:25:34 / 修改时间：18:30:28" itemprop="dateCreated datePublished" datetime="2020-01-16T18:25:34+08:00">2020-01-16</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>462</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="链接命令（文件）"><a href="#链接命令（文件）" class="headerlink" title="链接命令（文件）"></a>链接命令（文件）</h1><h2 id="ln-【选项参数】-【源文件】-【目标文件（链接）】"><a href="#ln-【选项参数】-【源文件】-【目标文件（链接）】" class="headerlink" title="ln 【选项参数】 【源文件】 【目标文件（链接）】"></a>ln 【选项参数】 【源文件】 【目标文件（链接）】</h2><p>链接命令顾名思义，就是为一个文件生成一个链接，而链接又分为<strong>软连接和硬链接</strong>，加上“-s”选项就是软连接，不加就是硬链接</p>
+<h2 id="软连接"><a href="#软连接" class="headerlink" title="软连接"></a>软连接</h2><p>软链接就相当于windows系统的快捷方式，只是引入一个指向源文件的链接，因此大小通常只有几个字节，如果你把源文件删了，那软连接也就没什么用了<br>下图我先对qzh文件生成了一个qzh.soft的软连接，然后用ls命令查看软连接，会发现有个指向箭头，指向源文件qzh<br>还有一个特点是软连接默认开启全部权限，即rwx（读，写，执行），每一个用户都是。<br><img src="https://img-blog.csdnimg.cn/20190910105037704.png" alt="在这里插入图片描述"></p>
+<h2 id="硬链接"><a href="#硬链接" class="headerlink" title="硬链接"></a>硬链接</h2><p>硬链接和软连接有很大的不同，首先他几乎是源文件的copy，连i节点都一样，更不用说内容了，正因为i节点一样，所以硬链接和源文件可以保持同步更新，硬链接可以看作是源文件的备份，所以如果源文件删除了，硬链接还可以照常操作，不会有影响<br>硬链接的特点：<br>1，和源文件保持同步更新<br>2，通过i节点区分<br>3，不能跨分区（软连接可以）<br>4，不能针对目录使用（软连接可以）</p>
+<h3 id="不能针对目录，不能跨分区"><a href="#不能针对目录，不能跨分区" class="headerlink" title="不能针对目录，不能跨分区"></a>不能针对目录，不能跨分区</h3><p><img src="https://img-blog.csdnimg.cn/20190910110447769.jpg" alt="不能针对目录，不能跨分区"></p>
+<h3 id="源文件和硬链接i节点相同"><a href="#源文件和硬链接i节点相同" class="headerlink" title="源文件和硬链接i节点相同"></a>源文件和硬链接i节点相同</h3><p><img src="https://img-blog.csdnimg.cn/20190910110627258.jpg" alt="源文件和硬链接i节点相同"></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/unity-UGUI-toggle监听/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/unity-UGUI-toggle监听/" class="post-title-link" itemprop="url">unity UGUI-toggle监听</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 16:21:55 / 修改时间：16:22:51" itemprop="dateCreated datePublished" datetime="2019-09-07T16:21:55+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>193</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一直以为下面代码是监听toggle点击的。。。其实不是，他是用来监听 ison 的改变的，真的好坑。。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Toggle.onValueChanged.AddListener((bool value) =&gt; resultToggleChange(Toggle, value));</span><br><span class="line">void resultToggleChange(Toggle toggle, bool value)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/初学Linux心得（三）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/初学Linux心得（三）/" class="post-title-link" itemprop="url">初学Linux心得（三）</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 16:14:24 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2019-09-07T16:14:24+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>352</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><p>一般的命令格式为<br>命令 【-选项】【参数】<br><strong>选项</strong>可以省略，他是用来“强化”一些命令的（我的理解）<br><strong>参数</strong>就是来指定操作对象的<br><strong>举个栗子：</strong><br>    命令：ls<br>    这个是用来查看目标目录下的文件的<br>    但是Linux中有一点跟windows一样，都是有隐藏文件的，这时候ls命令就查看不到隐藏文件，怎么办呢？用<strong>选项</strong>！！！<br>    比如“-a”，“-a”选项就是all的意思，用来查看全部文件，不管你隐藏与否，都会被查找，显示出来<br>    还有“-l”，“-l”选项可以让ls在查看文件同时，显示每个文件的相关属性，比如文件类型（linux中大多数文件没有后缀名），最后修改时间，还有显示分组（user，group,other）。<br>    如果你想使用多个选项，就可以用简写选项的方式，比如上面的两个选项，就可以用“-al”来表示</p>
+<h3 id="其他还有很多命令和选项，以后会一一提到"><a href="#其他还有很多命令和选项，以后会一一提到" class="headerlink" title="其他还有很多命令和选项，以后会一一提到"></a>其他还有很多命令和选项，以后会一一提到</h3>
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/初学Linux心得（二）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/初学Linux心得（二）/" class="post-title-link" itemprop="url">初学Linux心得（二）</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 16:14:18 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2019-09-07T16:14:18+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>212</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="目录介绍"><a href="#目录介绍" class="headerlink" title="目录介绍"></a>目录介绍</h3><h1 id="bin"><a href="#bin" class="headerlink" title="/bin/"></a>/bin/</h1><p>存放系统命令的目录（普通账号和管理员都可以访问）</p>
+<h1 id="boot"><a href="#boot" class="headerlink" title="/boot/"></a>/boot/</h1><p>系统启动目录</p>
+<h1 id="dev"><a href="#dev" class="headerlink" title="/dev/"></a>/dev/</h1><p>设备文件保存位置</p>
+<h1 id="etc"><a href="#etc" class="headerlink" title="/etc/"></a>/etc/</h1><p>配置文件（强烈建议备份）</p>
+<h1 id="home"><a href="#home" class="headerlink" title="/home/"></a>/home/</h1><p>普通用户，默认登陆位置，比如一个普通账号为abc，那他的起始位置就是/home/qzh/<br>而管理员的起始位置为/root/</p>
+<h1 id="lost-found"><a href="#lost-found" class="headerlink" title="/lost+found/"></a>/lost+found/</h1><p>每个分区目录中都会出现（用来备份和恢复目录）</p>
+<h1 id="usr"><a href="#usr" class="headerlink" title="/usr/"></a>/usr/</h1><p>系统的软件资源目录，类似与windows系统的windows目录</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/初学Linux心得（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/初学Linux心得（一）/" class="post-title-link" itemprop="url">初学Linux心得（一）</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 16:13:58 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2019-09-07T16:13:58+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>393</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Linux的安装就不讲了，网上示例很多，这里推荐在虚拟机里安装，这里说一下linux能够运行的4要素</p>
+<h2 id="1，分区"><a href="#1，分区" class="headerlink" title="1，分区"></a>1，分区</h2><p>首先是“/”，“/”是根分区<br>“swap”分区，swap分区属于交换分区，属于虚拟内存，建议最大不要超过2g<br>“/boot”分区，启动分区，这里最好不要存放任何东西，否则会影响你linux启动<br>“/home”分区，用户文件存放，一般是普通用户登陆后所在初始位置</p>
+<h2 id="2，格式化"><a href="#2，格式化" class="headerlink" title="2，格式化"></a>2，格式化</h2><p>很多同学都把格式化当作清空硬盘来使用 ，其实不是的，它的作用是要写入相应的文件系统，linux的文件系统有ext2,ext3,ext4等</p>
+<h2 id="3，每个分区要有一个设备文件名"><a href="#3，每个分区要有一个设备文件名" class="headerlink" title="3，每个分区要有一个设备文件名"></a>3，每个分区要有一个设备文件名</h2><h2 id="4，写入挂载点（相当于windows的写入盘符）"><a href="#4，写入挂载点（相当于windows的写入盘符）" class="headerlink" title="4，写入挂载点（相当于windows的写入盘符）"></a>4，写入挂载点（相当于windows的写入盘符）</h2><p>有一点，挂载的目录一定要是空目录<br><strong><em>Linux的文件系统和windows有很大不同的一点是<br> window的文件下面的子目录一定是和父父目录在一个硬盘空间内，而Linux子目录和父目录可以都有一个单独的硬盘空间</em></strong></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/做webgl遇到的两个坑/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/做webgl遇到的两个坑/" class="post-title-link" itemprop="url">做webgl遇到的两个坑</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-21 20:07:37" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:37+08:00">2019-08-21</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:24:42" itemprop="dateModified" datetime="2019-08-25T17:24:42+08:00">2019-08-25</time>
+              </span>
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>1.2k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="XML文件远程读取"><a href="#XML文件远程读取" class="headerlink" title="XML文件远程读取"></a>XML文件远程读取</h2><p>我的xml文件存放在远程服务器端，我想直接远程下载访问，但这遇到了问题<br>首先，xml读取有两种方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">XmlDocument xml = new XmlDocument();</span><br><span class="line">xml.LoadXml(string);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">XmlDocument xml = new XmlDocument();</span><br><span class="line">xml.Load(path);</span><br></pre></td></tr></table></figure>
+
+<p>loadxml是读取一个string字符串，从而写到xmldocument里，而load则是一个文件路径，要有后缀名<br>刚开始我是用load（远程链接）发现获取不到<br>然后我先用www下载，用<a href="http://www.text转成string字符传，接着用LoadXml读取" target="_blank" rel="noopener">www.text转成string字符传，接着用LoadXml读取</a><br>发现还是读取不到，再网上搜了半天，发现这个类StringReader，它把www读取的文本转化为另一种string字符串<br>虽然我debug出来两种字符串都一样，但是这个偏偏就能用，也希望有大佬给我解释一下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">IEnumerator DownXml()</span><br><span class="line">    &#123;</span><br><span class="line">        WWW xmlwww = new WWW(&quot;url&quot;);</span><br><span class="line">        yield return xmlwww;</span><br><span class="line">        if (xmlwww.isDone)</span><br><span class="line">        &#123;</span><br><span class="line">            System.IO.StringReader stringReader = new System.IO.StringReader(xmlwww.text);</span><br><span class="line">            stringReader.Read();</span><br><span class="line">            string result = stringReader.ReadToEnd();</span><br><span class="line">            stringReader.Close();</span><br><span class="line">            //print(xmlwww.text);</span><br><span class="line">            ReadXml(result);</span><br><span class="line">        &#125;</span><br><span class="line">        xmlwww.Dispose();</span><br><span class="line">    &#125;</span><br><span class="line">    void ReadXml(string path)</span><br><span class="line">    &#123;</span><br><span class="line">        XmlDocument xml = new XmlDocument();</span><br><span class="line">        xml.LoadXml(path);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="webgl远程加载ab包"><a href="#webgl远程加载ab包" class="headerlink" title="webgl远程加载ab包"></a>webgl远程加载ab包</h2><p>这个问题是我把ab包放在服务器上 编辑器上正常下载和解压 但是到了浏览器上到解压的步骤时会报一条错误</p>
+<h2 id="Decompressing-this-format-1-is-not-supported-on-this-platform"><a href="#Decompressing-this-format-1-is-not-supported-on-this-platform" class="headerlink" title="Decompressing this format (1) is not supported on this platform"></a>Decompressing this format (1) is not supported on this platform</h2><p>错误的大概意思就是平台不支持该格式解压<br>我到unity官方文档上查了一下 <a href="https://docs.unity3d.com/2017.4/Documentation/Manual/webgl-debugging.html" target="_blank" rel="noopener">u3d文档</a><br>原来我使用的是默认的压缩格式LZMA  而webgl应该用LZ4的压缩格式。。。。所以你只要在打包的代码中这样写就可以了，还有就是目标平台也要写成WebGL</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.WebGL);</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/www下载ab包/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/www下载ab包/" class="post-title-link" itemprop="url">www下载ab包</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-21 20:07:10" itemprop="dateCreated datePublished" datetime="2019-08-21T20:07:10+08:00">2019-08-21</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:24:32" itemprop="dateModified" datetime="2019-08-25T17:24:32+08:00">2019-08-25</time>
+              </span>
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>1.4k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="www下载远程ab包"><a href="#www下载远程ab包" class="headerlink" title="www下载远程ab包"></a>www下载远程ab包</h3><p>  最近一直在忙WebGL的项目，简直蛋疼，尤其是内存方面，什么都得节省，不敢让模型做太高精度的贴图，ui也是，但是这个项目模型量有点多，导致加载时间简直长到不能忍受，于是还是把资源打成ab包，上传服务器，在网站打开后再进行下载使用</p>
+<h2 id="打ab包"><a href="#打ab包" class="headerlink" title="打ab包"></a>打ab包</h2><p>unity打ab包很简单 把想要打包的资源，在assetlabel框里定好assetbundle名字就行，然后把以下代码放进Editor文件夹内，之后在Assets/Build AssetBundles菜单栏中点击build就可以新生成一个assetbundles文件夹，里面就是生成的ab包<br><img src="https://img-blog.csdnimg.cn/20190821154748445.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3MTkwMTI5,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">using System.IO;</span><br><span class="line">using UnityEditor;</span><br><span class="line">using UnityEngine;</span><br><span class="line"></span><br><span class="line">public class BuildAB : MonoBehaviour</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    //[MenuItem(&quot;AssetBundle/Package (Default)&quot;)]</span><br><span class="line">    [MenuItem(&quot;Assets/Build AssetBundles&quot;)]</span><br><span class="line">    static void BuildAllAssetBundles()</span><br><span class="line">    &#123;</span><br><span class="line">        string assetBundleDirectory = &quot;Assets/AssetBundles&quot;;</span><br><span class="line">        if (!Directory.Exists(assetBundleDirectory))</span><br><span class="line">        &#123;</span><br><span class="line">            Directory.CreateDirectory(assetBundleDirectory);</span><br><span class="line">        &#125;</span><br><span class="line">        BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="www下载ab包"><a href="#www下载ab包" class="headerlink" title="www下载ab包"></a>www下载ab包</h2><p>把ab包上传到服务器以后，就要下载了，这里我用的是www下载，直接上代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">IEnumerator wwwDown() &#123;</span><br><span class="line"></span><br><span class="line">        www= new WWW(url);//url链接记得带ab包的后缀，没有就不加</span><br><span class="line">        yield return www;</span><br><span class="line">        if (www.isDone) &#123;</span><br><span class="line">            isDown = false;</span><br><span class="line">            Destroy(Lodding.gameObject);</span><br><span class="line">            AssetBundle ab = www.assetBundle;</span><br><span class="line">            Scenes = ab.LoadAsset&lt;GameObject&gt;(&quot;scenes.prefab&quot;);</span><br><span class="line">            dancerMan = ab.LoadAsset&lt;GameObject&gt;(&quot;DancerMan.prefab&quot;);</span><br><span class="line">            ab.Unload(false);//false:只卸载用过的资源  true：卸载全部资源</span><br><span class="line">            Train.gameObject.SetActive(true);</span><br><span class="line">            //Instantiate(go);</span><br><span class="line">        &#125;</span><br><span class="line">        //释放资源（非托管资源）</span><br><span class="line">        www.Dispose();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="下载完成后，最好记得unload-ab包，如果你是存入本地，直接true-如果是像我一样只是临时放入变量中的话，就false"><a href="#下载完成后，最好记得unload-ab包，如果你是存入本地，直接true-如果是像我一样只是临时放入变量中的话，就false" class="headerlink" title="下载完成后，最好记得unload ab包，如果你是存入本地，直接true,如果是像我一样只是临时放入变量中的话，就false"></a>下载完成后，最好记得unload ab包，如果你是存入本地，直接true,如果是像我一样只是临时放入变量中的话，就false</h1>
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/unitywebgl部署在GitHub上访问/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/unitywebgl部署在GitHub上访问/" class="post-title-link" itemprop="url">unitywebgl部署在GitHub上访问</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 12:14:44" itemprop="dateCreated datePublished" datetime="2019-08-10T12:14:44+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:25:42" itemprop="dateModified" datetime="2019-08-25T17:25:42+08:00">2019-08-25</time>
+              </span>
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>219</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>生成webgl包就不说了，直接正题</p>
+<p>在GitHub上新建一个仓库，标题随意</p>
+<p>然后建一个本地仓库，把GitHub上新建仓库clone下来，clone成功的话就会出现一个readme文件</p>
+<p>把webgl项目放在本地的文件夹里 ，然后commit</p>
+<p>最重要的步骤来了 提交以后进入GitHub仓库的设置页面，把github pages的source原本的none 改成master branch</p>
+<p>然后它就会自动刷新，并生成你的项目链接 这样就可以访问了 是不是so easy<br><img src="https://img-blog.csdnimg.cn/20190805163401550.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3MTkwMTI5,size_16,color_FFFFFF,t_70" alt="GitHubPages"></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://shuaiqzh.com/2018-1-9f）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="乔某某">
+      <meta itemprop="description" content="写点文章，分享点趣事">
+      <meta itemprop="image" content="/images/user.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qzh blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2018-1-9f）/" class="post-title-link" itemprop="url">webgl测试（unity2018.1.9f）</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-10 12:12:05" itemprop="dateCreated datePublished" datetime="2019-08-10T12:12:05+08:00">2019-08-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-25 17:26:46" itemprop="dateModified" datetime="2019-08-25T17:26:46+08:00">2019-08-25</time>
+              </span>
+            
+          
+
+          
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+              <span>341</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+              <span>Infinity:aN</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>首先就是要有webgl支持 才能switch（unity里直接可以下）</p>
+<p>一些主要的注意事项，这个博主都有写</p>
+<p><a href="https://blog.csdn.net/k20132014/article/details/78448142" target="_blank" rel="noopener">https://blog.csdn.net/k20132014/article/details/78448142</a></p>
+<p>其实很多默认就好 唯一遇到的坑就是 那个 strip Engine Code 如果勾选了一些功能就没有了</p>
+<p>比如音频组件 就没作用了</p>
+<p>还有就是build之后 直接打开index.html 没用 只能部署到服务器上 通过链接访问 我是部署到了GitHub上 然后就可以看到你的项目了</p>
+<p>还有一个就是如果在移动端的浏览器打开 他会提醒部分移动端设备不能使用 不过我用的小米8可以使用 点完ok 继续等待加载即可</p>
+<p>下面是我部署在github上的webgl测试</p>
+<p><a href="http://shuaiqzh.com/UnityWebGl/">http://shuaiqzh.com/UnityWebGl/</a></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/user.png"
+      alt="乔某某">
+  <p class="site-author-name" itemprop="name">乔某某</p>
+  <div class="site-description" itemprop="description">写点文章，分享点趣事</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">29</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/qzhuser" title="GitHub &rarr; https://github.com/qzhuser" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://blog.csdn.net/qq_37190129" title="CSDN &rarr; https://blog.csdn.net/qq_37190129" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>CSDN</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">乔某某</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">28k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">Infinity:aN</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+    
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.3.0"></script><script src="/js/motion.js?v=7.3.0"></script>
+<script src="/js/schemes/muse.js?v=7.3.0"></script>
+
+<script src="/js/next-boot.js?v=7.3.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
